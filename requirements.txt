@@ -1,0 +1,9 @@
+pandas
+numpy
+scipy
+statsmodels
+pydantic
+pyyaml
+streamlit
+matplotlib
+plotly
