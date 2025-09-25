@@ -1,0 +1,14 @@
+primary: conversion
+guardrails:
+- name: error_rate
+  direction: lower_is_better
+  max_delta_pp: 0.5
+- name: time_on_task
+  direction: lower_is_better
+  max_delta_pct: 5.0
+definitions:
+  conversion: mean(outcome_Y)
+  error_rate: mean(error_flag)
+  time_on_task: mean(time_on_task)
+segments:
+- device
