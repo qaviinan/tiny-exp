@@ -1,0 +1,19 @@
+random_seed: 42
+n_users: 50000
+traffic_split:
+- 0.5
+- 0.5
+baseline:
+  conversion_p0: 0.12
+treatment:
+  effect_type: relative
+  delta: 0.03
+cuped:
+  use_cuped: true
+  pre_period_corr: 0.5
+alpha: 0.05
+power_target: 0.8
+srm:
+  alpha: 0.01
+export:
+  memo_path: decision_memo.md
